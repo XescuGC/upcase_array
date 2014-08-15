@@ -24,5 +24,10 @@ describe Dojo do
         expect(dojo.return_inmutable_array("A")).to eq([0])
       }
     end
+    context "must return [1] for two letters and the second one upcase" do
+      it {
+        expect(dojo.return_inmutable_array("aB")).to eq([1])
+      }
+    end
   end
 end
