@@ -14,5 +14,10 @@ describe Dojo do
         expect(dojo.return_inmutable_array("").empty?).to be_truthy
       }
     end
+    context "must return empty with only one downcase word" do
+      it {
+        expect(dojo.return_inmutable_array("a").empty?).to be_truthy
+      }
+    end
   end
 end
