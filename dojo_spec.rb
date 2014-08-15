@@ -19,5 +19,10 @@ describe Dojo do
         expect(dojo.return_inmutable_array("a").empty?).to be_truthy
       }
     end
+    context "must return [0] for one upcase word" do
+      it {
+        expect(dojo.return_inmutable_array("A")).to eq([0])
+      }
+    end
   end
 end
