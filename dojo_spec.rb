@@ -29,5 +29,10 @@ describe Dojo do
         expect(dojo.return_inmutable_array("aB")).to eq([1])
       }
     end
+    context "final test for many words" do
+      it {
+        expect(dojo.return_inmutable_array("CoDing DojO")).to eq([0,2,7,10])
+      }
+    end
   end
 end
